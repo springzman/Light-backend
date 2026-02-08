@@ -1,35 +1,50 @@
 {
-    "//": "BR Item Shop Config",
     "daily1": {
-        "itemGrants": ["AthenaCharacter:cid_001_athena_commando_f_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_045_Athena_Commando_M"
+        ],
+        "price": 800
     },
     "daily2": {
-        "itemGrants": ["AthenaCharacter:cid_002_athena_commando_f_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_035_Athena_Commando_M_Medieval"
+        ],
+        "price": 800
     },
     "daily3": {
-        "itemGrants": ["AthenaCharacter:cid_003_athena_commando_f_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_047_Athena_Commando_F_HolidayElf"
+        ],
+        "price": 800
     },
     "daily4": {
-        "itemGrants": ["AthenaCharacter:cid_004_athena_commando_f_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_119_Athena_Commando_F_SkiDarkBlue"
+        ],
+        "price": 1500
     },
     "daily5": {
-        "itemGrants": ["AthenaCharacter:cid_005_athena_commando_m_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_049_Athena_Commando_M"
+        ],
+        "price": 800
     },
     "daily6": {
-        "itemGrants": ["AthenaCharacter:cid_006_athena_commando_m_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_033_Athena_Commando_F_Medieval"
+        ],
+        "price": 800
     },
     "featured1": {
-        "itemGrants": ["AthenaCharacter:cid_007_athena_commando_m_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"
+        ],
+        "price": 1500
     },
     "featured2": {
-        "itemGrants": ["AthenaCharacter:cid_008_athena_commando_m_default"],
-        "price": 0
+        "itemGrants": [
+            "AthenaCharacter:CID_029_Athena_Commando_F_Halloween"
+        ],
+        "price": 1500
     }
 }

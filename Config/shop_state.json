@@ -1,0 +1,72 @@
+{
+  "lastRotation": "2026-02-08T16:52:31.175Z",
+  "rotationIntervalHours": 24,
+  "currentDaily": [
+    {
+      "name": "Sgt. Green Clover",
+      "itemGrants": [
+        "AthenaCharacter:CID_045_Athena_Commando_M"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Tower Recon Specialist",
+      "itemGrants": [
+        "AthenaCharacter:CID_035_Athena_Commando_M_Medieval"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Dominator",
+      "itemGrants": [
+        "AthenaCharacter:CID_047_Athena_Commando_F_HolidayElf"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Mogul Master (CAN)",
+      "itemGrants": [
+        "AthenaCharacter:CID_119_Athena_Commando_F_SkiDarkBlue"
+      ],
+      "price": 1500,
+      "rarity": "rare"
+    },
+    {
+      "name": "Recon Scout",
+      "itemGrants": [
+        "AthenaCharacter:CID_049_Athena_Commando_M"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Scarlet Defender",
+      "itemGrants": [
+        "AthenaCharacter:CID_033_Athena_Commando_F_Medieval"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    }
+  ],
+  "currentFeatured": [
+    {
+      "name": "Whiteout",
+      "itemGrants": [
+        "AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"
+      ],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Ghoul Trooper",
+      "itemGrants": [
+        "AthenaCharacter:CID_029_Athena_Commando_F_Halloween"
+      ],
+      "price": 1500,
+      "rarity": "epic"
+    }
+  ]
+}

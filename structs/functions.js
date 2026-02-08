@@ -154,9 +154,105 @@ function getContentPages(req) {
     return contentpages;
 }
 
+// Module-level path constants to avoid repeated construction
+const SHOP_ITEMS_PATH = path.join(__dirname, "..", "Config", "shop_items.json");
+const SHOP_STATE_PATH = path.join(__dirname, "..", "Config", "shop_state.json");
+const CATALOG_CONFIG_PATH = path.join(__dirname, "..", "Config", "catalog_config.json");
+const CONFIG_PATH = path.join(__dirname, "..", "Config", "config.json");
+
+function rotateShop() {
+    try {
+        const shopItems = JSON.parse(fs.readFileSync(SHOP_ITEMS_PATH).toString());
+        const shopState = JSON.parse(fs.readFileSync(SHOP_STATE_PATH).toString());
+        const config = JSON.parse(fs.readFileSync(CONFIG_PATH).toString());
+
+        // Get rotation interval from config
+        const rotationInterval = (config.itemShop && config.itemShop.rotationIntervalHours) 
+            ? config.itemShop.rotationIntervalHours 
+            : 24;
+
+        // Update shop state with config value
+        shopState.rotationIntervalHours = rotationInterval;
+
+        // Check if rotation is needed
+        const now = new Date();
+        const lastRotation = new Date(shopState.lastRotation);
+        const hoursSinceRotation = (now - lastRotation) / (1000 * 60 * 60);
+
+        if (hoursSinceRotation < rotationInterval && shopState.currentDaily.length > 0) {
+            // No rotation needed yet
+            return false;
+        }
+
+        // Perform rotation
+        const numDaily = 6; // Number of daily items
+        const numFeatured = 2; // Number of featured items
+
+        // Randomly select daily items
+        const dailyPool = [...shopItems.daily];
+        const selectedDaily = [];
+        for (let i = 0; i < numDaily && dailyPool.length > 0; i++) {
+            const randomIndex = Math.floor(Math.random() * dailyPool.length);
+            selectedDaily.push(dailyPool.splice(randomIndex, 1)[0]);
+        }
+
+        // Randomly select featured items
+        const featuredPool = [...shopItems.featured];
+        const selectedFeatured = [];
+        for (let i = 0; i < numFeatured && featuredPool.length > 0; i++) {
+            const randomIndex = Math.floor(Math.random() * featuredPool.length);
+            selectedFeatured.push(featuredPool.splice(randomIndex, 1)[0]);
+        }
+
+        // Update shop state
+        shopState.lastRotation = now.toISOString();
+        shopState.currentDaily = selectedDaily;
+        shopState.currentFeatured = selectedFeatured;
+        fs.writeFileSync(SHOP_STATE_PATH, JSON.stringify(shopState, null, 2));
+
+        // Update catalog config
+        const catalogConfig = {};
+        
+        // Add daily items
+        selectedDaily.forEach((item, index) => {
+            catalogConfig[`daily${index + 1}`] = {
+                itemGrants: item.itemGrants,
+                price: item.price
+            };
+        });
+
+        // Add featured items
+        selectedFeatured.forEach((item, index) => {
+            catalogConfig[`featured${index + 1}`] = {
+                itemGrants: item.itemGrants,
+                price: item.price
+            };
+        });
+
+        fs.writeFileSync(CATALOG_CONFIG_PATH, JSON.stringify(catalogConfig, null, 4));
+
+        return true;
+    } catch (error) {
+        console.error("Error during shop rotation:", error.message);
+        return false;
+    }
+}
+
 function getItemShop() {
+    // Trigger rotation check before getting shop
+    rotateShop();
     const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "responses", "catalog.json")).toString());
-    const CatalogConfig = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "catalog_config.json").toString()));
+    const CatalogConfig = JSON.parse(fs.readFileSync(CATALOG_CONFIG_PATH).toString());
+    const shopState = JSON.parse(fs.readFileSync(SHOP_STATE_PATH).toString());
+
+    // Calculate expiration time
+    const lastRotation = new Date(shopState.lastRotation);
+    const expiration = new Date(lastRotation.getTime() + shopState.rotationIntervalHours * 60 * 60 * 1000);
+
+    // Update catalog expiration
+    catalog.expiration = expiration.toISOString();
+    catalog.refreshIntervalHrs = shopState.rotationIntervalHours;
+    catalog.dailyPurchaseHrs = shopState.rotationIntervalHours;
 
     try {
         for (let value in CatalogConfig) {
@@ -189,7 +285,7 @@ function getItemShop() {
                 "currencySubType": "",
                 "regularPrice": CatalogConfig[value].price,
                 "finalPrice": CatalogConfig[value].price,
-                "saleExpiration": "9999-12-02T01:12:00Z",
+                "saleExpiration": expiration.toISOString(),
                 "basePrice": CatalogConfig[value].price
             }];
 
@@ -334,5 +430,6 @@ module.exports = {
     getPresenceFromUser,
     registerUser,
     DecodeBase64,
-    UpdateTokens
+    UpdateTokens,
+    rotateShop
 }

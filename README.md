@@ -18,7 +18,10 @@
     + Setting nicknames.
     + Removing nicknames.
 * Item Shop:
-    + Customizable Item Shop.
+    + **Automatic Item Rotation System** (see [SHOP_SYSTEM.md](SHOP_SYSTEM.md) for details).
+    + Configurable rotation intervals.
+    + Large pool of v12.41-appropriate items.
+    + Real-time client notifications on shop updates.
     + Purchasing items from the Item Shop.
     + Gifting items to your friends.
 ### XMPP Features
