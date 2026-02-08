@@ -1,43 +1,43 @@
 {
-  "lastRotation": "2026-02-08T16:49:12.078Z",
+  "lastRotation": "2026-02-08T16:52:31.175Z",
   "rotationIntervalHours": 24,
   "currentDaily": [
     {
-      "name": "Alpine Ace (CAN)",
+      "name": "Sgt. Green Clover",
       "itemGrants": [
-        "AthenaCharacter:CID_052_Athena_Commando_M_SkiDarkBlue"
+        "AthenaCharacter:CID_045_Athena_Commando_M"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Tower Recon Specialist",
+      "itemGrants": [
+        "AthenaCharacter:CID_035_Athena_Commando_M_Medieval"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Dominator",
+      "itemGrants": [
+        "AthenaCharacter:CID_047_Athena_Commando_F_HolidayElf"
+      ],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Mogul Master (CAN)",
+      "itemGrants": [
+        "AthenaCharacter:CID_119_Athena_Commando_F_SkiDarkBlue"
       ],
       "price": 1500,
       "rarity": "rare"
     },
     {
-      "name": "Commando",
-      "itemGrants": [
-        "AthenaCharacter:CID_032_Athena_Commando_F_Medieval"
-      ],
-      "price": 800,
-      "rarity": "uncommon"
-    },
-    {
-      "name": "Yuletide Ranger",
-      "itemGrants": [
-        "AthenaCharacter:CID_039_Athena_Commando_M"
-      ],
-      "price": 800,
-      "rarity": "uncommon"
-    },
-    {
       "name": "Recon Scout",
       "itemGrants": [
         "AthenaCharacter:CID_049_Athena_Commando_M"
-      ],
-      "price": 800,
-      "rarity": "uncommon"
-    },
-    {
-      "name": "Survival Specialist",
-      "itemGrants": [
-        "AthenaCharacter:CID_048_Athena_Commando_F"
       ],
       "price": 800,
       "rarity": "uncommon"
@@ -53,17 +53,17 @@
   ],
   "currentFeatured": [
     {
-      "name": "Cuddle Team Leader",
-      "itemGrants": [
-        "AthenaCharacter:CID_038_Athena_Commando_F_WinterCamo"
-      ],
-      "price": 2000,
-      "rarity": "legendary"
-    },
-    {
       "name": "Whiteout",
       "itemGrants": [
         "AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"
+      ],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Ghoul Trooper",
+      "itemGrants": [
+        "AthenaCharacter:CID_029_Athena_Commando_F_Halloween"
       ],
       "price": 1500,
       "rarity": "epic"

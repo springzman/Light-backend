@@ -117,13 +117,13 @@
     },
     {
       "name": "Mogul Master (CAN)",
-      "itemGrants": ["AthenaCharacter:CID_051_Athena_Commando_F_SkiDarkBlue"],
+      "itemGrants": ["AthenaCharacter:CID_119_Athena_Commando_F_SkiDarkBlue"],
       "price": 1500,
       "rarity": "rare"
     },
     {
       "name": "Alpine Ace (CAN)",
-      "itemGrants": ["AthenaCharacter:CID_052_Athena_Commando_M_SkiDarkBlue"],
+      "itemGrants": ["AthenaCharacter:CID_120_Athena_Commando_M_SkiDarkBlue"],
       "price": 1500,
       "rarity": "rare"
     }
