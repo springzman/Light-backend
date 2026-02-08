@@ -1,0 +1,253 @@
+{
+  "//": "Shop items pool for automatic rotation - Fortnite v12.41 (Chapter 2 Season 2)",
+  "daily": [
+    {
+      "name": "Commando",
+      "itemGrants": ["AthenaCharacter:CID_032_Athena_Commando_F_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Scarlet Defender",
+      "itemGrants": ["AthenaCharacter:CID_033_Athena_Commando_F_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Assault Trooper",
+      "itemGrants": ["AthenaCharacter:CID_034_Athena_Commando_M_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Tower Recon Specialist",
+      "itemGrants": ["AthenaCharacter:CID_035_Athena_Commando_M_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Whiplash",
+      "itemGrants": ["AthenaCharacter:CID_036_Athena_Commando_F_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Waypoint",
+      "itemGrants": ["AthenaCharacter:CID_037_Athena_Commando_F_Medieval"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Nog Ops",
+      "itemGrants": ["AthenaCharacter:CID_038_Athena_Commando_F"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Yuletide Ranger",
+      "itemGrants": ["AthenaCharacter:CID_039_Athena_Commando_M"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Brawler",
+      "itemGrants": ["AthenaCharacter:CID_040_Athena_Commando_F_SportsGrey"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Infiltrator",
+      "itemGrants": ["AthenaCharacter:CID_041_Athena_Commando_M_SportsGrey"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Star Spangled Ranger",
+      "itemGrants": ["AthenaCharacter:CID_042_Athena_Commando_M"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Star Spangled Trooper",
+      "itemGrants": ["AthenaCharacter:CID_043_Athena_Commando_F"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Synth Star",
+      "itemGrants": ["AthenaCharacter:CID_044_Athena_Commando_F"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Sgt. Green Clover",
+      "itemGrants": ["AthenaCharacter:CID_045_Athena_Commando_M"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Brilliant Striker",
+      "itemGrants": ["AthenaCharacter:CID_046_Athena_Commando_M_CarbideBlue"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Dominator",
+      "itemGrants": ["AthenaCharacter:CID_047_Athena_Commando_F_HolidayElf"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Survival Specialist",
+      "itemGrants": ["AthenaCharacter:CID_048_Athena_Commando_F"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Recon Scout",
+      "itemGrants": ["AthenaCharacter:CID_049_Athena_Commando_M"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Striped Soldier",
+      "itemGrants": ["AthenaCharacter:CID_050_Athena_Commando_M_CandyCamo"],
+      "price": 800,
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Mogul Master (CAN)",
+      "itemGrants": ["AthenaCharacter:CID_051_Athena_Commando_F_SkiDarkBlue"],
+      "price": 1500,
+      "rarity": "rare"
+    },
+    {
+      "name": "Alpine Ace (CAN)",
+      "itemGrants": ["AthenaCharacter:CID_052_Athena_Commando_M_SkiDarkBlue"],
+      "price": 1500,
+      "rarity": "rare"
+    }
+  ],
+  "featured": [
+    {
+      "name": "Raven",
+      "itemGrants": ["AthenaCharacter:CID_030_Athena_Commando_M_Halloween"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Love Ranger",
+      "itemGrants": ["AthenaCharacter:CID_029_Athena_Commando_F_Halloween"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Dark Voyager",
+      "itemGrants": ["AthenaCharacter:CID_027_Athena_Commando_M"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Skull Trooper",
+      "itemGrants": ["AthenaCharacter:CID_030_Athena_Commando_M_Halloween"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Ghoul Trooper",
+      "itemGrants": ["AthenaCharacter:CID_029_Athena_Commando_F_Halloween"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Cuddle Team Leader",
+      "itemGrants": ["AthenaCharacter:CID_038_Athena_Commando_F_WinterCamo"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Raptor",
+      "itemGrants": ["AthenaCharacter:CID_039_Athena_Commando_M_Tac"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Brite Bomber",
+      "itemGrants": ["AthenaCharacter:CID_044_Athena_Commando_F_SciPop"],
+      "price": 1200,
+      "rarity": "rare"
+    },
+    {
+      "name": "Red Knight",
+      "itemGrants": ["AthenaCharacter:CID_045_Athena_Commando_F_Regal"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Black Knight",
+      "itemGrants": ["AthenaCharacter:CID_046_Athena_Commando_M_Regal"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Dark Vanguard",
+      "itemGrants": ["AthenaCharacter:CID_047_Athena_Commando_F_SpaceCat"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Fate",
+      "itemGrants": ["AthenaCharacter:CID_048_Athena_Commando_F"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Omen",
+      "itemGrants": ["AthenaCharacter:CID_049_Athena_Commando_M"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Rex",
+      "itemGrants": ["AthenaCharacter:CID_050_Athena_Commando_M_Dinosaur"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Tricera Ops",
+      "itemGrants": ["AthenaCharacter:CID_051_Athena_Commando_F_Dinosaur"],
+      "price": 2000,
+      "rarity": "legendary"
+    },
+    {
+      "name": "Shadow Ops",
+      "itemGrants": ["AthenaCharacter:CID_052_Athena_Commando_F_TacticalWoodland"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Dazzle",
+      "itemGrants": ["AthenaCharacter:CID_053_Athena_Commando_F_StreetRacer"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Whiteout",
+      "itemGrants": ["AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Overtaker",
+      "itemGrants": ["AthenaCharacter:CID_055_Athena_Commando_M_StreetRacer"],
+      "price": 1500,
+      "rarity": "epic"
+    },
+    {
+      "name": "Sky Stalker",
+      "itemGrants": ["AthenaCharacter:CID_056_Athena_Commando_M_Pilot"],
+      "price": 1500,
+      "rarity": "epic"
+    }
+  ]
+}

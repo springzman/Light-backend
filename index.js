@@ -55,6 +55,26 @@ fs.readdirSync("./routes").forEach(fileName => {
 app.listen(PORT, () => {
     log.backend(`App started listening on port ${PORT}`);
 
+    // Initialize shop rotation on startup
+    log.backend("Initializing item shop rotation system...");
+    functions.rotateShop();
+    log.backend("Item shop initialized successfully");
+
+    // Set up periodic shop rotation check (every hour)
+    setInterval(() => {
+        const rotated = functions.rotateShop();
+        if (rotated) {
+            log.backend("Item shop has been rotated with new items");
+            
+            // Notify all connected clients about the shop update
+            functions.sendXmppMessageToAll({
+                type: "com.epicgames.catalog.updated",
+                payload: {},
+                timestamp: new Date().toISOString()
+            });
+        }
+    }, 60 * 60 * 1000); // Check every hour
+
     require("./xmpp/xmpp.js");
     require("./DiscordBot");
 }).on("error", async (err) => {
