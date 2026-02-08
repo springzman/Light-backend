@@ -1,27 +1,27 @@
 {
-  "lastRotation": "2026-02-08T16:48:22.870Z",
+  "lastRotation": "2026-02-08T16:49:12.078Z",
   "rotationIntervalHours": 24,
   "currentDaily": [
     {
-      "name": "Mogul Master (CAN)",
+      "name": "Alpine Ace (CAN)",
       "itemGrants": [
-        "AthenaCharacter:CID_051_Athena_Commando_F_SkiDarkBlue"
+        "AthenaCharacter:CID_052_Athena_Commando_M_SkiDarkBlue"
       ],
       "price": 1500,
       "rarity": "rare"
     },
     {
-      "name": "Nog Ops",
+      "name": "Commando",
       "itemGrants": [
-        "AthenaCharacter:CID_038_Athena_Commando_F"
+        "AthenaCharacter:CID_032_Athena_Commando_F_Medieval"
       ],
       "price": 800,
       "rarity": "uncommon"
     },
     {
-      "name": "Waypoint",
+      "name": "Yuletide Ranger",
       "itemGrants": [
-        "AthenaCharacter:CID_037_Athena_Commando_F_Medieval"
+        "AthenaCharacter:CID_039_Athena_Commando_M"
       ],
       "price": 800,
       "rarity": "uncommon"
@@ -35,17 +35,17 @@
       "rarity": "uncommon"
     },
     {
-      "name": "Brilliant Striker",
+      "name": "Survival Specialist",
       "itemGrants": [
-        "AthenaCharacter:CID_046_Athena_Commando_M_CarbideBlue"
+        "AthenaCharacter:CID_048_Athena_Commando_F"
       ],
       "price": 800,
       "rarity": "uncommon"
     },
     {
-      "name": "Star Spangled Trooper",
+      "name": "Scarlet Defender",
       "itemGrants": [
-        "AthenaCharacter:CID_043_Athena_Commando_F"
+        "AthenaCharacter:CID_033_Athena_Commando_F_Medieval"
       ],
       "price": 800,
       "rarity": "uncommon"
@@ -61,12 +61,12 @@
       "rarity": "legendary"
     },
     {
-      "name": "Raptor",
+      "name": "Whiteout",
       "itemGrants": [
-        "AthenaCharacter:CID_039_Athena_Commando_M_Tac"
+        "AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"
       ],
-      "price": 2000,
-      "rarity": "legendary"
+      "price": 1500,
+      "rarity": "epic"
     }
   ]
 }

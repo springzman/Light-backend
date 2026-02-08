@@ -1,19 +1,19 @@
 {
     "daily1": {
         "itemGrants": [
-            "AthenaCharacter:CID_051_Athena_Commando_F_SkiDarkBlue"
+            "AthenaCharacter:CID_052_Athena_Commando_M_SkiDarkBlue"
         ],
         "price": 1500
     },
     "daily2": {
         "itemGrants": [
-            "AthenaCharacter:CID_038_Athena_Commando_F"
+            "AthenaCharacter:CID_032_Athena_Commando_F_Medieval"
         ],
         "price": 800
     },
     "daily3": {
         "itemGrants": [
-            "AthenaCharacter:CID_037_Athena_Commando_F_Medieval"
+            "AthenaCharacter:CID_039_Athena_Commando_M"
         ],
         "price": 800
     },
@@ -25,13 +25,13 @@
     },
     "daily5": {
         "itemGrants": [
-            "AthenaCharacter:CID_046_Athena_Commando_M_CarbideBlue"
+            "AthenaCharacter:CID_048_Athena_Commando_F"
         ],
         "price": 800
     },
     "daily6": {
         "itemGrants": [
-            "AthenaCharacter:CID_043_Athena_Commando_F"
+            "AthenaCharacter:CID_033_Athena_Commando_F_Medieval"
         ],
         "price": 800
     },
@@ -43,8 +43,8 @@
     },
     "featured2": {
         "itemGrants": [
-            "AthenaCharacter:CID_039_Athena_Commando_M_Tac"
+            "AthenaCharacter:CID_054_Athena_Commando_F_StreetFashion"
         ],
-        "price": 2000
+        "price": 1500
     }
 }
